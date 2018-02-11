@@ -1,0 +1,22 @@
+ Sub main()
+        Dim Word1 As String = Nothing
+        Dim Word2 As String = Nothing
+        Dim NewWord As String = Nothing
+        Dim New1 As String = Nothing
+        Dim New2 As String = Nothing
+
+
+        Console.Write("Enter first word: ")
+        Word1 = Console.ReadLine
+        Console.Write("Enter second word: ")
+        Word2 = Console.ReadLine
+
+        New1 = Left(Word2, 2) & Mid(Word1, 3, Len(Word1))
+        New2 = Left(Word1, 2) & Mid(Word2, 3, Len(Word2))
+
+
+        NewWord = New1 & " " & New2
+        Console.WriteLine(NewWord)
+
+        Console.ReadKey()
+    End Sub

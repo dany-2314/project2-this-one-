@@ -1,0 +1,41 @@
+    Sub Main()
+        Dim NumOfDonuts As Integer = 0
+        Console.Write("Number of donuts: ")
+        NumOfDonuts = Console.ReadLine
+
+        If NumOfDonuts < 0 Then
+            Console.WriteLine("Do you owe them donuts?")
+            Console.ReadLine()
+            End
+        End If
+
+        If NumOfDonuts > 9 Then
+            Console.Write("Number of donuts: Many")
+
+        Else : Console.WriteLine("Number of donuts: " & NumOfDonuts)
+        End If
+
+
+        Console.ReadKey()
+
+    End Sub    Sub Main()
+        Dim NumOfDonuts As Integer = 0
+        Console.Write("Number of donuts: ")
+        NumOfDonuts = Console.ReadLine
+
+        If NumOfDonuts < 0 Then
+            Console.WriteLine("Do you owe them donuts?")
+            Console.ReadLine()
+            End
+        End If
+
+        If NumOfDonuts > 9 Then
+            Console.Write("Number of donuts: Many")
+
+        Else : Console.WriteLine("Number of donuts: " & NumOfDonuts)
+        End If
+
+
+        Console.ReadKey()
+
+    End Sub

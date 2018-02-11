@@ -1,0 +1,15 @@
+    Sub main()
+        Dim sen1 As String = Nothing
+        Dim sen2 As String = Nothing
+        Dim NewWord As String = Nothing
+
+        Console.Write("Enter a sentence : ")
+        sen1 = Console.ReadLine
+
+        sen2 = Mid(sen1, InStr(sen1, "not"), InStr(sen1, "bad"))
+        NewWord = sen1.Replace(sen2, "good")
+
+        Console.WriteLine(NewWord)
+
+        Console.ReadKey()
+    End Sub

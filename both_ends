@@ -1,0 +1,21 @@
+ Sub main()
+        Dim Word As String
+
+        Console.Write(" Write a word: ")
+        Word = Console.ReadLine
+        Console.WriteLine()
+
+        If Len(Word) = 3 Then
+            Console.WriteLine(" you cant get the first two and last 2 of a '3' so why try?: eh but still here you go but one letter is duplicated")
+        End If
+        Console.WriteLine()
+        If Len(Word) > 2 Then
+            Console.WriteLine(Left(Word, 2) & Right(Word, 2))
+        ElseIf Len(Word) < 2 Then
+            Console.WriteLine(Word)
+
+        End If
+
+        Console.ReadKey()
+    End Sub
+  

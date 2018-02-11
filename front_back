@@ -1,0 +1,43 @@
+  Sub main()
+        Dim word1 As String
+        Dim word2 As String = Nothing
+        Dim MODword As Integer = 0
+        Dim MODword2 As Integer = 0
+        Dim AF1 As String
+        Dim AB1 As String
+        Dim bf1 As String
+        Dim bB2 As String
+
+        Console.Write("Enter First Word: ")
+        word1 = Console.ReadLine
+
+        Console.Write("Enter Second Word: ")
+        word2 = Console.ReadLine
+
+        MODword = Len(word1) Mod 2
+        MODword2 = Len(word2) Mod 2
+
+        If MODword = 0 Then
+            AF1 = Left(word1, Len(word1) \ 2)
+            AB1 = Mid(word1, (Len(word1) \ 2) + 1, Len(word1))
+
+        Else : AF1 = Left(word1, Len(word1) \ 2 + 1)
+            AB1 = Mid(word1, (Len(word1) \ 2) + 2, Len(word1))
+
+        End If
+
+        If MODword2 = 0 Then
+            bf1 = Left(word2, Len(word2) \ 2)
+            bB2 = Mid(word2, (Len(word2) \ 2) + 1, Len(word2))
+
+        Else : bf1 = Left(word2, Len(word2) \ 2 + 1)
+            bB2 = Mid(word2, (Len(word2) \ 2) + 2, Len(word2))
+        End If
+
+        Console.WriteLine()
+
+        Console.WriteLine(AF1 & bf1 & AB1 & bB2)
+
+
+        Console.ReadKey()
+    End Sub

@@ -1,0 +1,22 @@
+    Sub main()
+        Dim Word As String = Nothing
+        Dim NewWord As String = Nothing
+        Dim wordA As String
+        Dim numofwords As Integer = 0
+        Console.Write("Enter a Word: ")
+        Word = Console.ReadLine
+
+
+        wordA = Word.Replace(Left(Word, 1), "*")
+        numofwords = Len(Word)
+        NewWord = Left(Word, 1) & Mid(wordA, 2, Len(Word))
+
+        Console.WriteLine(NewWord)
+
+
+
+
+        Console.ReadKey()
+
+
+    End Sub
